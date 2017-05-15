@@ -8,7 +8,7 @@
 import Foundation
 import DataStore
 
-public class AuthData: DataStoreContentJSONDictionary<String,Any> {
+open class AuthData: DataStoreContentJSONDictionary<String,Any> {
     public var credentials: [String:Any]? {
         get {
             return content["credentials"] as? [String:Any]
